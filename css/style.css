@@ -1,0 +1,1482 @@
+*{
+    margin :0;
+    padding:0;
+    box-sizing :border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    font-size:14px; /*  even font size value helped in removing the white-line from information section*/
+    scroll-behavior: smooth !important;
+}
+
+:root {
+	--primary: #1c262f;
+	--primary-light: #212d37;
+	--secondary: #0ee951;
+	--tertiary: #00dabf;
+	--gradient: linear-gradient(to right, #0ee951, #00dabf);
+}
+
+
+.inner{
+    padding:9rem 0 9rem 0;
+}
+
+.inner-2{
+    max-width:1250px;
+    margin: 0 auto;
+    padding:2rem 0 3rem 0;              
+}
+
+/* -----------banner starts here-------------- */
+.banner-wrapper{
+    background-image: url("../images/home.jpg");
+    background-size:cover;
+    background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+
+#my-navigation{
+    background-color: transparent;
+    border:0;
+    color:#fff;
+    margin-top:1.5rem;
+}
+
+#my-navigation .dropdown-toggle{
+    background-color:transparent;
+}
+
+#my-navigation .dropdown-menu{
+    background-color:var(--primary);    
+    border-radius: 0.3rem;
+    padding:1rem 0.5rem;
+    position:absolute;
+    left:0;
+}
+
+#my-navigation .menu-list:hover{
+    background-color: transparent;
+}
+
+#my-navigation .divider{
+    width: 100%;
+	height: 1px;
+    margin:0.5rem auto 0.5rem auto;
+    background-color: var(--primary-light);
+}
+.navbar-nav a:hover{
+    background-image: linear-gradient(to right , #0ee951, #00dabf);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*--------------------------------navigation collapsible menu bar customization-------------------------------- */
+.navbar-collapse{
+    height:100vh;
+    border-color: transparent !important;
+}
+
+.navbar-header .navbar-toggle{
+    background-color: transparent;
+    border-color:transparent;
+}
+
+.navbar-header .navbar-toggle:hover{
+    background-color: transparent;
+}
+
+.change{
+    border:3px solid #ddd !important;
+}
+
+.change-contact{
+    margin-top:10rem;
+}
+/*---------------------------------navigation collapsible menu bar customization------------------------------- */
+
+
+.navbar-header .navbar-brand{
+    font-size:1.7rem;
+    font-weight: 600;
+    color:#fff;
+}
+
+.navbar-header .navbar-brand:hover{
+    color:#fff;
+}
+
+
+#mynavbar ul li a {
+    font-size:0.9rem;
+    font-weight:500;
+    color:#fff;
+}
+
+.fab{
+    color:#fff;
+}
+
+.fab:hover{
+    color:var(--primary);
+}
+.fa-stack{
+    font-size: 0.8rem;
+    padding-top:0.8rem;    
+}
+
+.nav-social-icon .fa-stack-2x{
+     
+    background-image: linear-gradient(to right bottom , #0ee951, #00dabf);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	/* transition: all 0.2s ease; */
+}
+
+
+.brand-intro{
+    width:60%;
+    margin-top:3rem;
+    margin-left:1rem;
+    padding-bottom: 10rem;
+}
+
+.brand-intro h1{
+    font-size: 4rem;
+    font-weight:500;
+    color:#fff;
+    line-height:5rem;
+}
+
+.brand-intro h1 .broadband{
+    background-image: linear-gradient(to bottom , #0ee951, #00dabf);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.brand-intro p{
+    width:80%;
+    font-size: 1rem;
+    color:#eee;
+    opacity:0.7;
+    margin-top:2rem;
+    line-height:1.6rem;
+    /* background-color: palevioletred; */
+}
+
+.brand-intro .p-2{
+    font-size:1rem;
+    color:#eee;
+    opacity:1;
+}
+
+.brand-intro .fas{
+    padding: 1rem 0;
+    background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#0ee951),
+		to(#00dabf)
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.brand-intro .view-plans{
+    margin-top:2rem;
+    color: white;
+	border-radius: 0;
+	border-width: 2px;
+	padding: 0.8rem 2rem; 
+    background-color: transparent;
+    border-image-source: var(--gradient);
+    border-image-slice: 1;
+    box-shadow: 5px 5px 0px 0px var(--secondary);
+}
+
+.view-plans:hover{
+    box-shadow: none;
+	border-radius: 0;
+    transform: translate(5px, 5px);
+}
+
+/* -----------banner ends here-------------- */
+
+
+/* -----------support-features starts here-------------- */
+
+.info-1{
+    text-align: center;
+    padding:3rem;
+    background-color: var(--primary);
+}
+.info-2{
+    text-align: center;
+    padding:3rem;
+    background-color:var(--primary-light);
+}
+.info-3{
+    text-align: center;
+    padding:3rem;
+    background-color: white;
+}
+
+.info-1 h1,.info-2 h1{
+    font-size:1.5rem;
+    font-weight: 400;
+    color:#fff;
+    letter-spacing: 0.5px;
+}
+
+.info-3 h1{
+    font-size:1.5rem;
+    font-weight: 500;
+    color:var(--primary);
+    letter-spacing: 0.5px;
+}
+
+.info-1 p,.info-2 p {
+    font-size: 1rem;
+    font-weight: 100;
+    line-height:1.7rem;
+    color:#eee;
+    opacity:0.7;
+    margin-top: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+.info-3 p{
+    font-size:1rem;
+    color:grey;
+    font-weight: 100;
+    line-height:1.7rem;
+    margin-top: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+
+.info-1 .fas , .info-2 .fas , .info-3 .fas{
+    font-size: 3.3rem;
+    padding: 1rem 0;
+    background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#0ee951),
+		to(#00dabf)
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+/* -----------support-features ends here-------------- */
+
+
+/* -----------about us starts here-------------- */
+
+.about-us{
+    background-color: var(--primary-light);
+}
+
+.heading-left h3{
+    font-size: 1.1rem;
+    color:#fff;
+}
+
+.heading-left h1{
+    font-size: 4rem;
+    color:#fff;
+    line-height: 5rem;
+    margin-bottom: 2rem;
+}
+
+.heading-left p{
+    color:#eee;
+    opacity:0.7;
+    font-size: 1rem;
+    word-spacing: 0.05rem;
+    line-height: 1.7rem;
+}
+
+
+.about-img{   
+    /* background-color:peru; */
+    width:100%;
+    margin-top:5rem;
+}
+
+.about-img img{
+    width:100%;
+}
+
+.learn-more{
+    margin-top:1.3rem;
+    color: white;
+	border-radius: 0;
+	border-width: 2px;
+	padding: 0.8rem 2rem;
+    background-color: transparent;
+    border-image-source: var(--gradient);
+    border-image-slice: 1;
+    box-shadow: 5px 5px 0px 0px var(--secondary);
+}
+
+.learn-more:hover{
+    box-shadow: none;
+	border-radius: 0;
+    transform: translate(5px, 5px);
+}
+/* -----------about us ends here-------------- */
+
+
+/* -----------our-services starts here-------------- */
+.our-services{
+    background-color:var(--primary);
+}
+.heading-center{
+    text-align: center;
+}
+.heading-center h3{
+    font-size: 1.1rem;
+    color:#fff;
+    margin-bottom: 0rem;
+}
+
+.heading-center h1{
+    font-size: 2rem;
+    color:#fff;
+    line-height: 5rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.heading-center p{
+    color:#eee;
+    opacity:0.7;
+    font-size: 1rem;
+    word-spacing: 0.1rem;
+    line-height: 1.7rem;
+    padding:0rem 1rem 0 1rem;
+}
+
+.service-box{
+    /* border-radius: 0;
+	border-image-width: 2px;
+	padding: 0.8rem 2rem;
+    background-color: transparent;
+    border-image-source: var(--gradient);
+    border-image-slice: 1;      yaha pe ye apply nahi ho raha hai kyu ? */
+
+    border:2px solid #fff;
+    padding:3rem 0rem 1rem 2rem;
+    margin:2rem 0rem 0rem 0rem;
+}
+
+.service-box:hover{
+    border-width: 2px;
+    border-image-source: var(--gradient);
+    border-image-slice: 1;
+    box-shadow: 5px 5px 0px 0px var(--secondary);
+    transform: scale(1.01);
+} 
+
+.service-box .fas{
+    font-size: 3rem;
+    background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#0ee951),
+		to(#00dabf)
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.service-box h1{
+    font-size:1.5rem;
+    color:#fff;
+}
+.service-box p{
+    color:#eee;
+    opacity:0.7;
+    font-size: 1rem;
+}
+/* -----------our-services ends here----------------*/
+
+
+/* -----------our-plans starts here----------------*/
+.our-plans{
+    background-color: var(--primary-light);
+}
+
+.our-plans .plan-box{
+    
+    border:2px solid #fff;
+    padding:1rem 1rem 2.5rem 2rem;
+    margin-top:1rem;
+}
+
+.plan-box h1{
+    color:#fff;
+    font-size:1.6rem;
+    margin-bottom:1.5rem;
+}
+
+.plan-box h2{
+    color:#fff;
+    font-size:1.6rem;
+    font-weight: 300;
+}
+.plan-box p{
+    color:white;
+    font-size:1rem;
+    font-weight:500;
+    word-spacing: 0.1rem;
+    line-height: 1.7rem;
+    margin-bottom: 1.5rem;
+}
+.plan-box .p2{
+    font-size:1rem;
+    line-height: 2.5rem;
+}
+.plan-box .p2 p{
+    font-size:0.6rem;
+}
+
+.plan-box .p2 span{
+    margin-left:0.5rem;
+}
+
+.plan-box .fa-check-circle{
+    background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#0ee951),
+		to(#00dabf)
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+.plan-box .view-plans{
+    margin-top:2rem;
+    color: white;
+	border-radius: 0;
+	border-width: 2px;
+	padding: 0.8rem 2rem;
+    background-color: transparent;
+    border-image-source: var(--gradient);
+    border-image-slice: 1;
+    box-shadow: 5px 5px 0px 0px var(--secondary);
+}
+
+.view-plans:hover{
+    box-shadow: none;
+	border-radius: 0;
+    transform: translate(5px, 5px);
+}
+/* -----------our-plans ends here-----------------*/
+
+
+/* -----------our-work starts here-----------------*/
+.our-work{
+    background-color: var(--primary);
+}
+
+.our-work .work-img{
+    width:100%;
+    margin-top:5%;
+}
+.our-work .work-img img{
+    width:100%;
+    height:auto;
+}
+
+.heading-right{
+    text-align:left;
+}
+.heading-right h3{
+    font-size: 1.1rem;
+    color:#fff;
+    margin-bottom: 0rem;
+    margin-top:0rem;
+}
+
+.heading-right h1{
+    font-size: 2rem;
+    color:#fff;
+    line-height: 5rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.heading-right p{
+    color:#eee;
+    opacity:0.7;
+    font-size: 1.04rem;
+    word-spacing: 0.1rem;
+    line-height: 1.7rem;
+    padding:0 1rem 0 0;
+}
+
+.our-work .fas{
+    background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#0ee951),
+		to(#00dabf)
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+    font-size:2rem;
+    margin-top:1.5rem;
+}
+
+.right-content h1{
+   font-size: 1.7rem;
+   color:#fff;
+   text-align:left;
+}
+.right-content h4{
+   color:#fff;
+   font-size:1rem;
+   font-weight:100;
+   text-align: left;
+   margin-bottom: 2rem;
+}
+
+/* -----------our-work ends here------------------*/
+
+
+/* -----------testimonial starts here-----------------*/
+.testimonial{
+    background-color:var(--primary);
+}
+
+.swiper-container{
+    width:100%;
+    padding: 5rem;
+    margin: 0 auto;
+    /* background-color: cyan; */
+}
+
+
+.mySwiper {
+  width: 100%;
+  height: 100%;
+  /* background-color: mintcream; */
+
+}
+
+.swiper-wrapper{
+    width:100%;
+}
+
+/* 
+ .swiper-slide{
+     /* width:0%; the width is not responding   */
+     /* background-color: hotpink;  
+     
+} */
+
+.testimonial-card{
+    width:100%;
+    padding:1.5rem;
+    background: var(--primary);
+    border:2px solid;
+    margin:0 auto;
+    border-image-width: 3px;
+    border-image-source:var(--gradient);
+    border-image-slice: 1;  
+}
+
+.testimonial-card p{
+    font-size:1rem;
+    font-weight:300;
+    color:#fff;
+}
+
+.testimonial-flex{
+    display:flex;
+    flex-wrap:nowrap;
+    margin-top: 2rem;
+}
+.flex-img img{
+   width:70px;
+   height:70px;
+   border-radius: 50%;
+
+}
+
+.heading-flex{
+    margin-left:1.5rem;
+}
+
+.heading-flex h6{
+   color:#fff;
+   font-size:1.1rem;
+   font-weight:300;
+}
+
+.heading-flex p{
+    color:#fff;
+    font-size:0.9rem;
+    font-weight:lighter;
+}
+
+.swiper-container .swiper-button-next::after{
+    color:grey;
+    font-size:2rem;
+    /* font-size: 2rem; when i apply this without pseudo elements 
+     its not getting applied but with ::after its responding . why so?? */
+}
+.swiper-container .swiper-button-prev::after{
+    color:grey;
+    font-size: 2rem;
+}
+
+/* -----------testimonial ends here------------------*/
+
+
+/* -----------newsletter starts here------------------*/
+.newsletter{
+    background-color:var(--primary-light);
+}
+
+.newsletter-left h1{
+    font-size: 1.5rem;
+    color:#fff;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.newsletter-left p{
+    color:#eee;
+    opacity:0.7;
+    font-size: 1.04rem;
+    word-spacing: 0.1rem;
+    line-height: 1.7rem;
+    padding:0;
+}
+.subscribe .form-group{
+    display: flex!important;
+    width:100%;
+    margin-top: 2.9rem;
+}
+.subscribe .form-group .form-control{
+    flex: 1 1 auto;
+    width:1%;
+    height:3.2rem;
+    border-radius:0.3rem 0  0  0.3rem;
+  
+}
+.subscribe .form-group .subscribe-btn{
+    padding: 0.6rem 2rem;
+    background-color: transparent;
+    border-width: 2px;
+    border-image-source: var(--gradient);
+    border-image-slice: 1;
+    margin-left: -1px;
+
+}
+
+
+::placeholder{
+    font-size:0.9rem;
+    color: red; /* its not getting applied ...plz check placeholder reference in other projects*/
+}
+
+.form-group .subscribe-btn{
+    font-size:1.1rem;
+    color:#fff;
+}
+
+.subscribe-btn:hover{
+    background: linear-gradient(to right , #0ee951, #00dabf);
+}
+/* -----------newsletter ends here-------------------*/
+
+
+/* -----------contact starts here-------------------*/
+.contact{
+    background-color:var(--primary)
+}
+
+.heading-left-2{
+    text-align:left;
+}                                     
+.heading-left-2 h3{
+    font-size: 1.1rem;
+    color:#fff;
+    margin-bottom: 0rem;
+    margin-top:0rem;
+}
+
+.heading-left-2 h1{
+    font-size: 2rem;
+    color:#fff;
+    line-height: 5rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.heading-left-2 p{
+    color:#eee;
+    opacity:0.7;
+    font-size: 1.04rem;
+    word-spacing: 0.1rem;
+    line-height: 1.7rem;
+    margin-bottom:2rem;
+}
+
+.contact .form-group{
+    width:100%;
+}
+
+.contact .form-group input{
+    width:100%;
+    height:3.5rem;
+    margin-bottom:1rem;
+}
+.contact .form-group textarea{
+    width:100%;
+    height:11rem;
+}
+
+.contact .submit-btn{
+    margin-top:2rem;
+    color: white;
+	border-radius: 0;
+	border-width: 2px;
+	padding: 0.8rem 2rem;
+    background-color: transparent;
+    border-image-source: var(--gradient);
+    border-image-slice: 1;
+    box-shadow: 5px 5px 0px 0px var(--secondary);
+}
+
+.submit-btn:hover{
+    box-shadow: none;
+	border-radius: 0;
+    transform: translate(5px, 5px);
+}
+
+.contact .contact-img{
+    width:100%;
+    margin-top:6rem;
+}
+.contact .contact-img img{
+    width:100%;
+   
+}
+
+/* -----------contact ends here--------------------*/
+
+
+
+/* -----------location starts here--------------------*/
+
+.location{
+    background-color: var(--primary-light);
+}
+.location-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.location-text{
+    margin-left:1rem;
+}
+
+.location-text h6{
+    font-size: 1.1rem;
+    color: #fff;
+}
+.location-text p{
+    font-size: 1rem;
+    color: #fff;
+}
+
+.location-icon i{
+    background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#0ee951),
+		to(#00dabf)
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+    font-size:3.3rem;
+}
+/* -----------location ends here---------------------*/
+
+
+/* -----------footer starts here---------------------*/
+footer{
+    background-color:var(--primary);
+}
+
+footer .col-lg-3 h1{
+    font-size:1.7rem;
+    font-weight:300;
+    color:#fff;
+    margin-bottom: 1.5rem;
+}
+
+footer .col-lg-3 p{
+    color:#eee;
+    opacity:0.7;
+    font-size: 1.05rem;
+    font-weight: 100;
+    line-height: 1.7rem;
+    margin-bottom:2rem;
+    font-family:sans-serif;
+}
+
+.footer-icon .fab{
+    font-size:2rem;
+}
+
+.footer-icon .fab:hover{
+    background: linear-gradient(to right , #0ee951, #00dabf);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.footer-icon .margin-left-right {
+    padding:0 1rem ;
+}
+
+.quick-links , .useful-links{
+    margin-bottom: 1.5rem;
+}
+
+.quick-links .fa-caret-right{
+      color: #fff;
+      font-size: 1rem;
+      margin-right:1rem;
+}
+
+.quick-links a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-family:sans-serif;
+}
+
+.quick-links a:hover{
+    background: linear-gradient(to right , #0ee951, #00dabf);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+.useful-links .fa-caret-right{
+    color: #fff;
+    font-size: 1rem;
+    margin-right:1rem;
+}
+
+.useful-links a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  font-family:sans-serif;
+}
+
+.useful-links a:hover{
+  background: linear-gradient(to right , #0ee951, #00dabf);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+footer .form-group{
+    display: flex!important;
+    width:100%;
+}
+footer .form-group .form-control{
+    flex: 1 1 auto;
+    width:1%;
+    height:3.2rem;
+    border-radius:0.3rem 0  0  0.3rem;
+}
+footer .form-group .email-btn{
+    padding: 0.5rem 2rem;
+    background-color: transparent;
+    border-width:2px;
+    border-image-source: var(--gradient);
+    border-image-slice: 1;
+    margin-left:-1px;
+    border-width:2px;
+}
+
+.email-btn:hover{
+    background: linear-gradient(to right , #0ee951, #00dabf);
+}
+
+.email-btn .fa-envelope{
+    color: #fff;
+    
+}
+/* -----------footer ends here----------------------*/
+
+
+/* -----------payment-bottom starts here---------------------*/
+
+.payment-bottom{
+    background-color:black;
+}
+
+.payment-bottom .row{
+    max-width:1250px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    display: flex;
+    justify-content:space-between !important;
+    
+}   
+
+/* .payment-bottom .bottom-text{
+    
+} */
+
+.payment-bottom .bottom-text p{
+    font-size:1rem;
+    color:#fff;
+}
+
+.payment-bottom .bottom-text a{
+    font-size:1rem;
+    color:#fff;
+    text-decoration:none;
+}
+
+.payment-bottom .bottom-text a:hover{
+    color:rgb(51, 147, 236);
+}
+
+.payment-bottom .shift{
+    text-align: right;  
+}
+
+.payment-bottom .shift i{
+    font-size:1.3rem;
+    padding-left:0.3rem;
+}
+
+.payment-bottom .shift i:hover{
+    color:#fff;
+}
+/* -----------payment-bottom ends here----------------------*/
+
+
+/* -----------top-button starts here-----------------------*/
+#top-button{
+    width:52px;
+    height: 52px;
+    background-color: #323137;
+    border-radius:50%;
+    border:none;
+    position:fixed;
+    right:1.5rem;
+    bottom:1.5rem;
+    display:none;
+}
+
+#top-button:hover{
+    background-color: #0f0f11;
+}
+
+#top-button img{
+    width:18px;
+    margin:0.5rem;
+}
+
+/* -----------top-button ends here------------------------*/
+
+
+/*----------------------media query starts------------------------*/
+
+@media only screen and (max-width:1303px){
+
+    .brand-intro{
+       width:60%;
+    
+    }
+}
+
+@media only screen and (max-width:1229px){
+
+    .brand-intro{
+       width:59%;
+       
+    }
+}
+@media only screen and (max-width:1200px){
+
+    .brand-intro{
+       width:70%;
+       
+    }
+}
+
+@media only screen and (max-width:1086px){
+
+    .brand-intro{
+       width:70%;
+    
+    }
+}
+
+@media only screen and (max-width:1003px){
+
+    .brand-intro{
+       width:75%;
+       
+    }
+}
+
+@media only screen and (max-width:932px){
+
+    .brand-intro{
+       width:80%;
+       
+    }
+}
+@media only screen and (max-width:991px){
+
+    .brand-intro{
+       width:100%;
+       
+    }
+}
+
+/* media query for mobile-size screen  starts*/
+@media only screen and  (min-width:572px) and (max-width: 778px){
+
+     .swiper-row-padding{
+        padding:0 2rem;
+        /* background-color: tomato; */
+    }
+}
+@media only screen and (max-width:563px){
+
+    .banner-wrapper .brand-intro h1{
+       width:100%;
+       
+    }
+}
+@media only screen and (max-width:541px){
+    .banner-wrapper.brand-intro{
+         width:100%;
+     }
+     .banner-wrapper .brand-intro h1{
+        width:70%;
+        font-size:2rem;
+        line-height:2.5rem;
+    }
+
+    .banner-wrapper .brand-intro p{
+        width:90%;
+        text-align: justify;
+    }
+
+
+    .info-1 , .info-2 , .info-3 {
+        padding: 3rem;
+    }
+    .info-1 p , .info-2 p , .info-3 p{
+        font-size:0.9rem;
+    }
+ 
+
+
+    .inner{
+        padding:2rem 0;
+    }
+    .about-us .heading-left{
+        width:100%;          
+    }
+
+    .about-us .heading-left h1{
+        width:70%;
+        font-size:2rem;
+        line-height:2.5rem;
+    }
+    
+    .about-us .heading-left p{
+        width: 100%;
+        font-size:1rem;
+    }
+    .about-img{
+        width:100% !important;
+        margin-left:0rem;
+        margin-top:2rem;
+        margin-bottom:2rem;
+    }
+
+
+    .heading-center h1{
+        font-size:1.7rem;
+    }
+
+    .heading-center p{
+        font-size: 0.98rem;
+        padding:0;
+        word-spacing: 0.05rem;
+    }
+
+
+    .service-box{
+        padding:2rem 1rem;
+    }
+
+
+    .service-box .fas{
+        font-size: 2rem;
+    }
+
+    .service-box p{
+       font-size: 0.93rem;
+    }
+    
+    .plan-box{
+        padding-left:1rem !important;
+        padding-right:0rem !important;
+    }
+    .plan-box p{
+        font-size: 0.89rem;
+    }
+
+    .heading-right{
+        text-align:center;
+        margin-top:3rem;
+    }
+
+    .heading-right h1{
+        font-size:1.7rem;
+        text-align: center;
+    }
+    
+    .heading-right p{
+        font-size:0.98rem;
+    }
+
+    .testimonial-card p{
+        font-size:0.9rem;
+    }
+ 
+    .newsletter-left{
+        text-align: center;
+    }
+
+    .newsletter-left h1{
+        font-size:1.5rem;
+    }
+
+    .newsletter-left p{
+        font-size:1rem;
+        word-spacing: 0.05rem;
+    }
+
+    .heading-left-2{
+        text-align: center;
+    }
+    
+    .heading-left-2 h1{
+        font-size:1.7rem;
+    }
+    .heading-left-2 p{
+        font-size:1rem;
+    }
+
+    .contact .contact-img img{
+        display:none;
+    }
+    .location-icon{
+        display: flex;
+        justify-content:flex-start;
+        align-items:flex-start;
+        margin-bottom: 2rem;
+    }
+
+    footer .col-lg-3 h1{
+        font-size: 1.5rem;
+    }
+
+    footer .col-lg-3 p{
+        font-size: 1rem;
+    }
+
+    footer .col-lg-3{
+        margin-bottom:4rem;
+    }
+
+    .payment-bottom .shift{
+        text-align: right;
+    }
+}
+
+@media only screen and (max-width:496px){
+    .banner-wrapper.brand-intro{
+         width:100%;
+     }
+
+     .banner-wrapper .brand-intro h1{
+        width:75%;
+     }
+}
+
+@media only screen and (max-width:481px){
+    .payment-bottom .bottom-text p{
+        font-size:0.8rem;
+    }
+
+    .payment-bottom .bottom-text a{
+        font-size:0.8rem;
+    }
+
+    .payment-bottom .col-xs-7{
+        padding:0;
+    }
+    .payment-bottom .col-xs-5{
+        padding:0;
+    }
+}
+
+
+@media only screen and (max-width:467px){
+    .banner-wrapper.brand-intro{
+         width:100%;
+     }
+
+     .banner-wrapper .brand-intro h1{
+        width:80%;
+     }
+
+     .about-us .heading-left h1{
+         width:80%;
+     }
+}
+@media only screen and (max-width:438px){
+    .banner-wrapper.brand-intro{
+         width:100%;
+     }
+
+     .banner-wrapper .brand-intro h1{
+        width:90%;
+     }
+
+     .about-us .heading-left h1{
+        width:100%;
+    }
+
+    .our-services .heading-center h1{
+        font-size:1.3rem;
+    }
+    .our-plans .heading-center h1{
+        font-size:1.3rem;
+    }
+
+    .our-work .heading-right h1{
+        font-size: 1.3rem;
+    }
+ }
+
+ @media only screen and (max-width:350px){
+     
+    .our-services .heading-center h3,
+    .our-plans .heading-center h3,
+    .our-work .heading-right h3 {
+
+        font-size: 1rem;
+    }
+    .our-services .heading-center h1{
+        line-height: 1.7rem;
+        margin: 1.5rem 0;
+    }
+    .our-plans .heading-center h1{
+        line-height: 1.7rem;
+        margin: 1.5rem 0;
+    }
+
+    .our-work .heading-right h1{
+        line-height: 1.7rem;
+        margin: 1.5rem 0;
+    }
+ }
+/* media query for mobile-size screen ends*/
+
+
+/* media query for tablet-size screen starts*/
+@media only screen and (max-width:1200px){
+   .brand-intro p{
+        width:75%;
+    }
+
+    .plan-box .p2{
+        font-size:0.9rem;
+    }
+
+    .location-icon i{
+        font-size: 3rem;
+    }
+    
+    .location-text h6{
+        font-size: 1rem;
+    }
+    .location-text p{
+        font-size: 0.9rem;
+    }
+    
+
+    footer .col-lg-3{
+        margin-bottom:4rem;
+    }
+
+}
+
+
+@media only screen and (max-width:991px){
+  .brand-intro h1{
+        width:80%;
+        font-size: 3.5rem;
+    }
+
+    .about-img{
+        width:70%;
+        margin: 2rem auto;
+    }
+    .inner{
+        padding:3rem 0 3rem 0;
+    }
+    .brand-intro p{
+        width:60%;
+    }
+
+    .heading-right{
+        text-align:center;
+        margin-top: 2rem;
+    }
+    .heading-right h1{
+        text-align:center;
+    }
+
+    .right-content{
+        margin-left: 1rem;
+        /* background-color: goldenrod; */
+    }
+
+    .newsletter-left{
+        text-align: center;
+    }
+
+    .heading-left-2{
+        text-align: center;
+    }
+
+    .contact-img{
+        display: none;
+    }
+
+    .location .inner-2{
+        padding: 4rem 0 2rem 0;
+    }
+    .location-icon{
+        display: flex;
+        justify-content:flex-start;
+        align-items:flex-start;
+        margin-bottom: 2rem;
+    }
+    
+    .location-icon i{
+        font-size:2.7rem;
+    }
+    .location-text h6{
+        font-size: 1.1rem;
+    }
+    .location-text p{
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width:767px){
+    .about-img{
+        width:70%;
+        margin: 2rem auto;
+    }
+
+    .heading-left{
+        width:80%;
+        margin: 0 auto;
+    
+    }
+
+    .heading-left h1{
+        font-size: 3.5rem;
+    }
+ 
+    .expand{
+        position:fixed;
+        top:0;
+        z-index: 1;
+        width:100%;
+        padding: 0;
+        margin: 0;
+        background-color:var(--primary);
+    }
+
+    #my-navigation{
+        background-color:var(--primary);
+        padding:0;
+        margin: 0;
+    }
+
+    .brand-intro h1{
+        margin-top:7rem;          /* the document is out of flow so h1 will take margin from the
+                               body and not nav(expand) thats why margin is greater in number */
+    }
+}
+
+
+@media only screen and (max-width:667px){
+.heading-left{
+    width:90%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width:601px){
+.heading-left{
+    width:100%;
+    margin: 0 auto;
+  }
+}
+
+
+/* media query for tablet-size screen ends*/
+
+
+/*----------------------media query ends------------------------*/

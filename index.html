@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mirko</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css" />
+    <link href="css/aos.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+
+  <body id="top">
+    <!-----------banner starts here------------>
+    <header class="banner-wrapper">
+      <div class="expand">
+        <div class="container">
+          <nav class="navbar navbar-default" id="my-navigation">
+            <div class="navbar-header">
+              <button
+                type="button"
+                onclick="onclickmenu()"
+                id="menu-bar"
+                class="navbar-toggle"
+                data-toggle="collapse"
+                data-target="#mynavbar"
+              >
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a href="#" class="navbar-brand">Mirko</a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-right" id="mynavbar">
+              <ul class="nav navbar-nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#plans">Plans</a></li>
+
+                <li class="dropdown">
+                  <a
+                    href="#"
+                    class="dropdown-toggle"
+                    data-toggle="dropdown"
+                    id="anshu"
+                    aria-expanded="true"
+                    onclick="topshift()"
+                    onfocusout="removeChange()"
+                  >
+                    Drop <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="anshu">
+                    <li><a class="menu-list" href="#">Article Details</a></li>
+                    <li class="divider" role="separator"></li>
+                    <li><a class="menu-list" href="#">Terms Conditons</a></li>
+                    <li class="divider" role="separator"></li>
+                    <li><a class="menu-list" href="#">Privacy Policy</a></li>
+                  </ul>
+                </li>
+
+                <li><a href="#contact" id="contactTop-shift">Contact</a></li>
+              </ul>
+
+              <span class="nav-social-icon">
+                <span class="fa-stack">
+                  <a href="#"><i class="fas fa-circle fa-stack-2x"></i></a>
+                  <a href="#"><i class="fab fa-facebook-f fa-stack-1x"></i></a>
+                </span>
+                <span class="fa-stack">
+                  <a href="#"><i class="fas fa-circle fa-stack-2x"></i></a>
+                  <a href="#"><i class="fab fa-twitter fa-stack-1x"></i></a>
+                </span>
+              </span>
+            </div>
+            <!-- end of navbar-collapse -->
+          </nav>
+        </div>
+        <!--end of container-->
+      </div>
+      <!--end of expand-->
+
+      <div class="container">
+        <div class="brand-intro" id="home" data-aos="fade-right">
+          <h1>
+            Best <span class="broadband">Broadband</span> Internet Plans For You
+          </h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus
+            tempore accusamus quis magnam doloremque itaque ad modi, pariatur
+            iste labore similique officiis impedit aspernatur aperiam facere
+            architecto. Eligendi, repellendus inventore!
+          </p>
+
+          <p class="p-2">
+            <i class="fas fa-laptop-house fa-lg"></i> &nbsp;&nbsp;Lorem ipsum
+            dolor sit amet.
+          </p>
+
+          <p class="p-2">
+            <i class="fas fa-wifi fa-lg"></i> &nbsp;&nbsp;Lorem ipsum dolor sit
+            amet.
+          </p>
+
+          <button class="view-plans">View Plans</button>
+        </div>
+      </div>
+      <!--end of container-->
+    </header>
+    <!-----------banner ends here-------------->
+
+    <!-----------support-features starts here-------------->
+    <section class="information">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12 info-1" data-aos="zoom-in">
+            <i class="fas fa-tachometer-alt fa-3x"></i>
+            <h1>Download 1 GBPS</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
+              odit consequatur doloribus natus in suscipit!
+            </p>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12 info-2" data-aos="zoom-in">
+            <i class="fas fa-clock fa-3x"></i>
+            <h1>99% Internet Uptime</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
+              odit consequatur doloribus natus in suscipit!
+            </p>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12 info-3" data-aos="zoom-in">
+            <i class="fas fa-headset fa-3x"></i>
+            <h1>24/7 Support</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
+              odit consequatur doloribus natus in suscipit!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-----------support-features ends here---------------->
+
+    <!-----------about-us starts here---------------->
+    <section class="about-us" id="about">
+      <div class="container">
+        <div class="row inner">
+          <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+            <div class="heading-left" data-aos="fade-right">
+              <h3>ABOUT US</h3>
+              <h1>We are top internet service company</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sed
+                accusantium aut dolores inventore architecto modi cupiditate
+                eligendi corporis, illum illo culpa. Reiciendis, molestias.
+                Illum voluptatum quisquam ad veritatis dolorem.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sed
+                accusantium aut dolores inventore architecto modi cupiditate
+                eligendi corporis, illum illo culpa. Reiciendis, molestias.
+                Illum voluptatum quisquam ad veritatis dolorem.
+              </p>
+              <button class="learn-more">Learn More</button>
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+            <div class="about-img" data-aos="fade-down">
+              <img src="images/about.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-----------about-us ends here------------------->
+
+    <!-----------our-services starts here----------------->
+    <section class="our-services" id="services">
+      <div class="container">
+        <div class="row inner-2">
+          <div class="col-lg-12">
+            <div class="heading-center">
+              <h3>OUR SERVICES</h3>
+              <h1>Explore unlimited possibilities</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                asperiores, quia accusantium sunt corporis optio recusandae?
+                Nostrum libero pariatur cumque, ipsa dolores voluptatibus
+                voluptate alias sit fuga. Itaque, ea quo.
+              </p>
+            </div>
+          </div>
+
+          <div class="row" data-aos="zoom-in">
+            <div class="col-lg-4 col-md-4">
+              <div class="service-box">
+                <i class="fas fa-home fa-2x"></i>
+                <h1>HOME BROADBAND</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Magnam odit consequatur doloribus natus in suscipit!
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4">
+              <div class="service-box">
+                <i class="fas fa-wifi fa-2x"></i>
+                <h1>HOME WIFI</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Magnam odit consequatur doloribus natus in suscipit!
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4">
+              <div class="service-box">
+                <i class="fas fa-phone fa-2x"></i>
+                <h1>HOME BROADBAND</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Magnam odit consequatur doloribus natus in suscipit!
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4">
+              <div class="service-box">
+                <i class="fas fa-mobile fa-2x"></i>
+                <h1>MOBILE CONNECTION</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Magnam odit consequatur doloribus natus in suscipit!
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4">
+              <div class="service-box">
+                <i class="fas fa-home fa-2x"></i>
+                <h1>SECURITY</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Magnam odit consequatur doloribus natus in suscipit!
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4">
+              <div class="service-box">
+                <i class="fas fa-tv fa-2x"></i>
+                <h1>TV SETUP BOX</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Magnam odit consequatur doloribus natus in suscipit!
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--end of row (zoom-animation)-->
+        </div>
+      </div>
+    </section>
+    <!-----------our-services ends here------------------->
+
+    <!-----------our-plans starts here----------------->
+    <section class="our-plans" id="plans">
+      <div class="container">
+        <div class="row inner-2">
+          <div class="col-lg-12">
+            <div class="heading-center">
+              <h3>OUR PLANS</h3>
+              <h1>Explore unlimited possibilities</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                asperiores, quia accusantium sunt corporis optio recusandae?
+                Nostrum libero pariatur cumque, ipsa dolores voluptatibus
+                voluptate alias sit fuga. Itaque, ea quo.
+              </p>
+            </div>
+          </div>
+          <div class="row" data-aos="zoom-in">
+            <div class="col-lg-4 col-md-4">
+              <div class="plan-box">
+                <h1>BASIC BUNDLE</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="p2">
+                  <i class="far fa-check-circle fa-1x"></i
+                  ><span>Lorem ipsum dolor sit amet.</span>
+                </p>
+                <p class="p2">
+                  <i class="far fa-check-circle fa-1x"></i
+                  ><span>Lorem ipsum dolor sit amet.</span>
+                </p>
+                <p class="p2">
+                  <i class="far fa-check-circle fa-1x"></i
+                  ><span>Lorem ipsum dolor sit amet.</span>
+                </p>
+                <p class="p2">
+                  <i class="far fa-check-circle fa-1x"></i
+                  ><span>Lorem ipsum dolor sit amet.</span>
+                </p>
+                <h2>$24/Month</h2>
+                <button class="view-plans">View Plans</button>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4">
+              <div class="plan-box">
+                <h1>BUSINESS BUNDLE</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="p2">
+                  <i class="far fa-check-circle fa-1x"></i
+                  ><span>Lorem ipsum dolor sit amet.</span>
+                </p>
+                <p class="p2">
+                  <i class="far fa-check-circle fa-1x"></i
+                  ><span>Lorem ipsum dolor sit amet.</span>
+                </p>
+                <p class="p2">
+                  <i class="far fa-check-circle fa-1x"></i
+                  ><span>Lorem ipsum dolor sit amet.</span>
+                </p>
+                <p class="p2">
+                  <i class="far fa-check-circle fa-1x"></i
+                  ><span>Lorem ipsum dolor sit amet.</span>
+                </p>
+                <h2>$99/Month</h2>
+                <button class="view-plans">View Plans</button>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4">
+              <div class="plan-box">
+                <h1>PREMIUM BUNDLE</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="p2">
+                  <i class="far fa-check-circle fa-1x"></i
+                  ><span>Lorem ipsum dolor sit amet.</span>
+                </p>
+                <p class="p2">
+                  <i class="far fa-check-circle fa-1x"></i
+                  ><span>Lorem ipsum dolor sit amet.</span>
+                </p>
+                <p class="p2">
+                  <i class="far fa-check-circle fa-1x"></i
+                  ><span>Lorem ipsum dolor sit amet.</span>
+                </p>
+                <p class="p2">
+                  <i class="far fa-check-circle fa-1x"></i
+                  ><span>Lorem ipsum dolor sit amet.</span>
+                </p>
+                <h2>$199/Month</h2>
+                <button class="view-plans">View Plans</button>
+              </div>
+            </div>
+          </div>
+          <!--end of row (animation)-->
+        </div>
+      </div>
+    </section>
+    <!-----------our-plans ends here------------------->
+
+    <!-----------our-work starts here------------------->
+    <section class="our-work">
+      <div class="container-fluid">
+        <div class="row inner">
+          <div class="col-lg-6 col-md-6" data-aos="fade-right">
+            <div class="work-img">
+              <img src="images/work.jpg" />
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <div class="heading-right">
+              <h3>OUR WORK</h3>
+              <h1>Explore unlimited possibilities</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Dignissimos dicta mollitia totam explicabo obcaecati quia
+                laudantium repudiandae.
+              </p>
+            </div>
+
+            <div class="row right-content" data-aos="fade-up">
+              <div class="col-lg-5 col-sm-5 col-xs-6">
+                <i class="fas fa-briefcase fa-2x"></i>
+                <h1
+                  class="purecounter"
+                  data-purecounter-start="0"
+                  data-purecounter-end="1258"
+                  data-purecounter-duration="3"
+                >
+                  1
+                </h1>
+                <h4>PROJECTS COMPLETED</h4>
+              </div>
+
+              <div class="col-lg-5 col-sm-5 col-xs-6">
+                <i class="fas fa-award fa-2x"></i>
+                <h1
+                  class="purecounter"
+                  data-purecounter-start="0"
+                  data-purecounter-end="150"
+                  data-purecounter-duration="3"
+                >
+                  1
+                </h1>
+                <h4>AWARDS</h4>
+              </div>
+            </div>
+            <!--end of right-content-->
+
+            <div class="row right-content" data-aos="fade-up">
+              <div class="col-lg-5 col-sm-5 col-xs-6">
+                <i class="fas fa-users fa-2x"></i>
+                <h1
+                  class="purecounter"
+                  data-purecounter-start="0"
+                  data-purecounter-end="1255"
+                  data-purecounter-duration="3"
+                >
+                  1
+                </h1>
+                <h4>CUSTOMER ACTIVE</h4>
+              </div>
+
+              <div class="col-lg-5 col-sm-5 col-xs-6">
+                <i class="fas fa-clock fa-2x"></i>
+                <h1
+                  class="purecounter"
+                  data-purecounter-start="0"
+                  data-purecounter-end="1157"
+                  data-purecounter-duration="3"
+                >
+                  1
+                </h1>
+                <h4>GOOD REVIEWS</h4>
+              </div>
+            </div>
+            <!--end of right-content-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-----------our-work ends here--------------------->
+
+    <!-----------testimonial starts here--------------------->
+    <section class="testimonial">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="heading-center">
+              <h3>TESTIMONIALS</h3>
+              <h1>What Our Clients Says</h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Adipisci esse facilis vel, neque ipsa mollitia impedit, commodi
+                ab illo dignissimos, voluptatum quae amet sed tenetur dolores
+                reprehenderit laudantium quo sint.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--swiper starts-->
+      <div class="container">
+        <div class="row swiper-row-padding" data-aos="zoom-in">
+          <div class="col-lg-12 swiper-container">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam commodi officia laborum qui iste quidem!
+                    </p>
+
+                    <div class="testimonial-flex">
+                      <div class="flex-img">
+                        <img src="images/testimonial-1.jpg" alt="" />
+                      </div>
+                      <div class="heading-flex">
+                        <h6>Marlene Visconte</h6>
+                        <p>General Manager - Scouter</p>
+                      </div>
+                    </div>
+                    <!--testimonial-flex ends-->
+                  </div>
+                  <!--testimonial-card ends-->
+                </div>
+                <!--swiper-slide ends-->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam commodi officia laborum qui iste quidem!
+                    </p>
+
+                    <div class="testimonial-flex">
+                      <div class="flex-img">
+                        <img src="images/testimonial-2.jpg" alt="" />
+                      </div>
+                      <div class="heading-flex">
+                        <h6>John Spiker</h6>
+                        <p>Team Leader - Vanquish</p>
+                      </div>
+                    </div>
+                    <!--testimonial-flex ends-->
+                  </div>
+                  <!--testimonial-card ends-->
+                </div>
+                <!--swiper-slide ends-->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam commodi officia laborum qui iste quidem!
+                    </p>
+
+                    <div class="testimonial-flex">
+                      <div class="flex-img">
+                        <img src="images/testimonial-3.jpg" alt="" />
+                      </div>
+                      <div class="heading-flex">
+                        <h6>Stella Virtuoso</h6>
+                        <p>Design Chief - Upscale</p>
+                      </div>
+                    </div>
+                    <!--testimonial-flex ends-->
+                  </div>
+                  <!--testimonial-card ends-->
+                </div>
+                <!--swiper-slide ends-->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam commodi officia laborum qui iste quidem!
+                    </p>
+
+                    <div class="testimonial-flex">
+                      <div class="flex-img">
+                        <img src="images/testimonial-4.jpg" alt="" />
+                      </div>
+                      <div class="heading-flex">
+                        <h6>Mike tim</h6>
+                        <p>Investor -&nbsp; TechGroww</p>
+                      </div>
+                    </div>
+                    <!--testimonial-flex ends-->
+                  </div>
+                  <!--testimonial-card ends-->
+                </div>
+                <!--swiper-slide ends-->
+              </div>
+              <!--swiper-wrapper ends-->
+            </div>
+            <!--swiper ends-->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <!--column ends-->
+        </div>
+        <!--row ends-->
+        <!--swiper ends-->
+      </div>
+      <!-- end of container-->
+    </section>
+    <!-----------testimonial ends here----------------------->
+
+    <!-----------newsletter starts here----------------------->
+    <section class="newsletter">
+      <div class="container">
+        <div class="row inner-2">
+          <div class="col-lg-6 col-md-6">
+            <div class="newsletter-left" data-aos="fade-right">
+              <h1>Subscribe to our Newsletter</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor
+                deleniti nobis amet accusamus debitis facilis quibusdam officia
+                laborum nesciunt. Nihil.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <div class="subscribe" data-aos="fade-down">
+              <form action="#" class="form-inline">
+                <div class="form-group">
+                  <input
+                    type="email"
+                    placeholder="Enter your email address"
+                    class="form-control"
+                  />
+                  <input
+                    type="submit"
+                    value="Subscribe"
+                    class="subscribe-btn"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-----------newsletter ends here------------------------->
+
+    <!-----------contact starts here------------------------->
+    <section class="contact" id="contact">
+      <div class="container-fluid">
+        <div class="row inner">
+          <div
+            class="col-lg-5 col-md-5 col-lg-offset-1 col-md-offset-1"
+            data-aos="fade-right"
+          >
+            <!--left wrapping column starts-->
+
+            <div class="col-lg-12">
+              <div class="heading-left-2">
+                <h3>CONTACT</h3>
+                <h1>Send your query</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Dignissimos dicta mollitia totam explicabo obcaecati quia
+                  laudantium repudiandae.
+                </p>
+              </div>
+            </div>
+
+            <!---------- contact form starts------------->
+            <div class="col-lg-6 col-md-6">
+              <form action="#" class="form-inline">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter name"
+                  />
+                </div>
+              </form>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+              <form action="#" class="form-inline">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter phone number"
+                  />
+                </div>
+              </form>
+            </div>
+
+            <div class="col-lg-12 col-md-12">
+              <form action="#" class="form-inline">
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter email"
+                  />
+                </div>
+              </form>
+            </div>
+
+            <div class="col-lg-12 col-md-12">
+              <form action="#" class="form-inline">
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    placeholder="Message"
+                  ></textarea>
+                </div>
+              </form>
+            </div>
+
+            <div class="col-lg-12">
+              <input class="submit-btn" type="submit" />
+            </div>
+            <!---------- contact form starts------------->
+          </div>
+          <!--left wrapping column ends-->
+
+          <div class="col-lg-6 col-md-6" data-aos="fade-down">
+            <!--right wrapping column starts-->
+            <div class="contact-img">
+              <img src="images/contact.jpg" />
+            </div>
+          </div>
+          <!--right wrapping column ends-->
+        </div>
+      </div>
+    </section>
+    <!-----------contact ends here--------------------------->
+
+    <!-----------location starts here--------------------------->
+    <section class="location">
+      <div class="container">
+        <div class="row inner-2" data-aos="zoom-in">
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="location-icon">
+              <i class="far fa-map fa-3x"></i>
+              <div class="location-text">
+                <h6>ADDRESS</h6>
+                <p>Teuku Umar ST. 1919</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="location-icon">
+              <i class="fas fa-mobile-alt fa-3x"></i>
+              <div class="location-text">
+                <h6>CALL FOR QUERY</h6>
+                <p>(800) 265 216 2020</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="location-icon">
+              <i class="far fa-envelope fa-3x"></i>
+              <div class="location-text">
+                <h6>SEND US MESSAGE</h6>
+                <p>infodemofile@example.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="location-icon">
+              <i class="far fa-clock fa-3x"></i>
+              <div class="location-text">
+                <h6>OPENING HOURS</h6>
+                <p>09:00 AM - 18:00 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end of row-->
+      </div>
+      <!--end of container-->
+    </section>
+    <!-----------location ends here----------------------------->
+
+    <!-----------footer starts here--------------------------->
+    <footer>
+      <div class="container">
+        <div class="row inner-2" data-aos="fade-right">
+          <div class="col-lg-3 col-md-3">
+            <h1>Mirko</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+              animi repudiandae explicabo esse maxime, impedit rem voluptatibus
+              amet error quas.
+            </p>
+
+            <div class="footer-icon">
+              <i class="fab fa-facebook-f fa-2x"></i>
+              <i class="fab fa-twitter fa-2x margin-left-right"></i>
+              <i class="fab fa-instagram fa-2x"></i>
+            </div>
+          </div>
+          <!--end of col-lg-3 -->
+
+          <div class="col-lg-3 col-md-3">
+            <h1>Quick Links</h1>
+
+            <section>
+              <div class="quick-links">
+                <i class="fas fa-caret-right"></i>
+                <a href="#">About</a>
+              </div>
+
+              <div class="quick-links">
+                <i class="fas fa-caret-right"></i>
+                <a href="#">Services</a>
+              </div>
+
+              <div class="quick-links">
+                <i class="fas fa-caret-right"></i>
+                <a href="#">Plans</a>
+              </div>
+
+              <div class="quick-links">
+                <i class="fas fa-caret-right"></i>
+                <a href="#">Contact</a>
+              </div>
+            </section>
+          </div>
+          <!--end of col-lg-3 -->
+
+          <div class="col-lg-3 col-md-3">
+            <h1>Useful Links</h1>
+
+            <section>
+              <div class="useful-links">
+                <i class="fas fa-caret-right"></i>
+                <a href="#">Privacy</a>
+              </div>
+
+              <div class="useful-links">
+                <i class="fas fa-caret-right"></i>
+                <a href="#">Terms</a>
+              </div>
+
+              <div class="useful-links">
+                <i class="fas fa-caret-right"></i>
+                <a href="#">Disclaimer</a>
+              </div>
+
+              <div class="useful-links">
+                <i class="fas fa-caret-right"></i>
+                <a href="#">FAQ</a>
+              </div>
+            </section>
+          </div>
+          <!--end of col-lg-3 -->
+
+          <div class="col-lg-3 col-md-3">
+            <h1>Newsletter</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Laboriosam, ab.
+            </p>
+
+            <form action="#" class="form-inline">
+              <div class="form-group">
+                <input
+                  type="email"
+                  placeholder="Enter Email"
+                  class="form-control"
+                />
+                <button class="btn btn-default email-btn">
+                  <i class="fas fa-envelope fa-lg"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+          <!--end of col-lg-3 -->
+        </div>
+        <!--end of row-->
+      </div>
+      <!--end of container -->
+    </footer>
+    <!-----------footer ends here----------------------------->
+
+    <!-----------payment-bottom starts here--------------------------->
+    <section class="payment-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-5 col-xs-7 bottom-text">
+            <p>Copyright &copy; Your name</p>
+            <br />
+            <p>
+              Distributed by: <a href="https://themewagon.com/">Themewagon</a>
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-3"></div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5 shift">
+            <i class="fab fa-cc-visa fa-lg p-1"></i>
+            <i class="fab fa-cc-mastercard fa-lg p-1"></i>
+            <i class="fab fa-cc-paypal fa-lg p-1"></i>
+            <i class="fab fa-cc-amazon-pay fa-lg p-1"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-----------payment-bottom ends here----------------------------->
+
+    <!-------------top-button starts here----------------------------->
+    <!-- <a href="#top">
+               <button onclick="topFunction()"   id="top-button" >
+                   <img src="images/up-arrow.png">
+               </button>
+             </a> -->
+
+    <button onclick="topFunction()" id="top-button">
+      <img src="images/up-arrow.png" />
+    </button>
+    <!---------------top-button ends here----------------------------->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/purecounter.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
